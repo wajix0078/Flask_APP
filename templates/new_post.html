@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block head %}
+<title>New Post</title>
+{% endblock %} {% block body %}
+
+<form action="/posts" method="POST">
+  Title: <input type="text" name="title" id="title" />
+  <br />
+  Author: <input type="text" name="author" id="author" />
+  <br />
+  Content: <input type="text" name="content" id="content" />
+  <br />
+  <input type="submit" value="Save" />
+</form>
+
+{% endblock %}
